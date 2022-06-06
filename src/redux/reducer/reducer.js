@@ -1,5 +1,6 @@
 let initialState = {
-  contactList: [],
+  contact: [],
+  keyword: "",
 };
 
 function reducer(state = initialState, action) {
@@ -7,20 +8,18 @@ function reducer(state = initialState, action) {
 
   switch (type) {
     case "ADD_CONTACT":
-      return {
-        ...state,
-        contactList: [
-          ...state.contactList,
-          {
-            name: payload.name,
-            phoneNumber: payload.phoneNumber,
-          },
-        ],
-      };
+      state.contact.push({
+        name: payload.name,
+        phoneNumber: payload.phoneNumber,
+      });
+      break;
 
-    default:
-      return { ...state };
+    case "SEARCH_CONTACT":
+      state.keyword = payload.keyword;
+      break;
   }
+
+  return { ...state };
 }
 
 export default reducer;

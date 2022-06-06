@@ -1,9 +1,8 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import { Container, Row, Col } from 'react-bootstrap';
-import ContactForm from './component/ContactForm';
-import ContactList from './component/ContactList';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import { Container, Row, Col } from "react-bootstrap";
+import ContactForm from "./component/ContactForm";
+import ContactList from "./component/ContactList";
 
 //1. 왼쪽에는 연락처 등록하는 폼이, 오른쪽에는 연락처 찾는폼이잇다
 //2. 리스트에 유저 이름과 번호를 추가할 수 있다
@@ -12,15 +11,15 @@ import ContactList from './component/ContactList';
 
 function App() {
   return (
-    <div className='background' >
-      <h1 className='title'>Contact List</h1>
+    <div className="background">
+      <h1 className="title">Contact List</h1>
       <Container>
         <Row>
           <Col>
-            <ContactForm/>
+            <ContactForm />
           </Col>
           <Col>
-            <ContactList/>
+            <ContactList />
           </Col>
         </Row>
       </Container>
