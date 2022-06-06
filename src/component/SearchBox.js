@@ -20,7 +20,7 @@ const SearchBox = () => {
         <Col lg={10}>
           <Form.Control
             type="text"
-            placeholder="Enter the name you want to find."
+            placeholder="Enter the name you want to find"
             onChange={(event) => setKeyword(event.target.value)}
           />
         </Col>

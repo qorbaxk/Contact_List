@@ -20,6 +20,7 @@ const ContactList = () => {
   return (
     <div className="right-box">
       <SearchBox />
+      <div className="number-of">Friends : {filteredList.length}</div>
       {filteredList.map((item) => (
         <ContactItem item={item} />
       ))}

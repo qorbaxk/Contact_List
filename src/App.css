@@ -39,8 +39,15 @@
   border-color: #1fd660;
   font-family: 'LeferiPoint-BlackObliqueA';
   border-radius: 20px;
+  height: 45px;
+  align-items: center;
 }
 .btn-primary:hover{
+  background-color: black;
+  border-color: black;
+  color: #1fd660;
+}
+.btn-primary:focus{
   background-color: black;
   border-color: black;
   color: #1fd660;
@@ -53,6 +60,7 @@
   padding-left: 10px;
 
 }
+
 .contacts{
   margin-top: 10px;
 }
@@ -64,4 +72,8 @@
 .right-box{
   border-left: 1px solid rgb(52, 52, 52);
   padding-left: 20px;
+}
+
+.number-of{
+  margin-top: 20px;
 }
