@@ -1,7 +1,8 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import ContactForm from './component/ContactForm';
+import ContactList from './component/ContactList';
 
 
 //1. 왼쪽에는 연락처 등록하는 폼이, 오른쪽에는 연락처 찾는폼이잇다
@@ -11,15 +12,15 @@ import ContactForm from './component/ContactForm';
 
 function App() {
   return (
-    <div >
-      <h1 className='title'>연락처</h1>
+    <div className='background' >
+      <h1 className='title'>Contact List</h1>
       <Container>
         <Row>
           <Col>
             <ContactForm/>
           </Col>
           <Col>
-
+            <ContactList/>
           </Col>
         </Row>
       </Container>
