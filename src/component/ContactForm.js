@@ -11,7 +11,7 @@ const ContactForm = () => {
     toast: true,
     position: "center-center",
     showConfirmButton: false,
-    timer: 2000,
+    timer: 1000,
     timerProgressBar: true,
     didOpen: (toast) => {
       toast.addEventListener("mouseenter", Swal.stopTimer);
