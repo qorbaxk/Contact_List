@@ -7,7 +7,7 @@ const ContactList = () => {
   const contactList = useSelector((state) => state.contactList);
 
   return (
-    <div>
+    <div className="right-box">
       <SearchBox />
       {contactList.map((item) => (
         <ContactItem item={item}/>
